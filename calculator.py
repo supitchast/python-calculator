@@ -7,8 +7,12 @@ class Calculator:
 
     def multiply(self, a, b):
         result = 0
-        for i in range(b):
-            result = self.add(result, a)
+        if b > 0:
+            for i in range(b):
+                result = self.add(result, a)
+        else:
+            for i in range(a):
+                result = self.add(result, b)
         return result
 
     def divide(self, a, b):

@@ -30,7 +30,7 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(self.calc.multiply(4.5,38), 171)
 
     def test_mul2(self):
-        self.assertEqual(self.calc.multiply(-10, 9), -90)
+        self.assertEqual(self.calc.multiply(10, -9), -90)
 
     #Divide
     def test_div1(self):
